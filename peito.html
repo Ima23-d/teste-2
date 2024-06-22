@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mendes - fit - aplicativo</title>
+    <link rel="shortcut icon" href="favicon_io (6)/android-chrome-512x512.png" type="image/x-icon">
+</head>
+<body>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('background-image.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background:linear-gradient(-45deg,rgb(3, 212, 3), rgb(5, 122, 5));
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;  
+    max-width: 1200px;
+}
+
+.form-braço {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 560px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: 560px 600px;
+    background-color: transparent;
+    background-color: rgb(15, 201, 15);
+    margin: auto;
+    transition: background-color 0.3s ease,transform 0.3s ease;
+}
+.form-braço:hover{
+    transform: scale(1.12);
+    color: black;
+}
+
+.trec{
+    font-size: 16px;
+}
+
+.treino{
+    font-size: 3rem;
+    margin: 20px;
+}
+
+.exer{
+    font-size: 1.5rem;
+    padding-right: 180px;
+
+}
+
+.form-box {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width:90%;
+    height: 150px;
+    background-image: url(treino\ de\ braço.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-shadow: 0 20px 40px black;   
+    margin: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    max-width: 600px;
+    
+}
+.form-box:hover{
+    transform: scale(1.18);
+    color: rgb(8, 218, 200);
+    box-shadow: 0 10px 40px rgb(8, 218, 200);
+}
+
+
+.form-box2 {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width:90%;
+    height: 150px;
+    background-image: url(treino\ de\ costa.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-shadow: 0 20px 40px black;   
+    margin: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    max-width: 600px;
+}
+.form-box2:hover{
+    transform: scale(1.18);
+    color:  rgb(8, 218, 200);
+    box-shadow: 0 10px 40px rgb(8, 218, 200);
+}
+
+
+.form-box3 {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width:90%;
+    height: 150px;
+    background-image: url(treino\ de\ abdomen.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-shadow: 0 20px 40px black;   
+    margin: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    max-width: 600px;
+}
+.form-box3:hover{
+    transform: scale(1.18);
+    color:  rgb(8, 218, 200);
+    box-shadow: 0 10px 40px rgb(8, 218, 200);
+}
+
+.form-box4 {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width:90%;
+    height: 150px;
+    background-image: url(treino\ de\ perna.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-shadow: 0 20px 40px black;   
+    margin: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    max-width: 600px;
+}
+.form-box4:hover{
+    transform: scale(1.18);
+    color:  rgb(8, 218, 200);
+    box-shadow: 0 10px 40px rgb(8, 218, 200);
+}
+
+.form-box5 {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width:90%;
+    height: 150px;
+    background-image: url(treio\ de\ peito.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-shadow: 0 20px 40px black;   
+    margin: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    max-width: 600px;
+}
+.form-box5:hover{
+    transform: scale(1.18);
+    color:rgb(8, 218, 200);
+    box-shadow: 0 10px 40px rgb(8, 218, 200);
+}
+
+.form-box6 {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width:90%;
+    height: 150px;
+    background-image: url(treino\ de\ ombros.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-shadow: 0 20px 40px black;   
+    margin: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    max-width: 600px;
+}
+.form-box6:hover{
+    transform: scale(1.18);
+    color:rgb(8, 218, 200);
+    box-shadow: 0 10px 40px rgb(8, 218, 200);
+}
+
+
+a{
+    color: white;
+}
+    </style>
+    <div class="container"><!--divpai-->
+    <form>
+        <h1 class="treino">Treino de peito</h1>
+
+        <div class="form-braço"><!--div filho-->
+            <h1 class="trec">Treinar o peito pode ajudar a aumentar a massa muscular, o que é benéfico para a saúde metabólica, pois músculos maiores queimam mais calorias em repouso. Isso pode ajudar na manutenção do peso e na prevenção de doenças metabólicas. Muitos esportes e atividades físicas requerem força e potência na parte superior do corpo. Músculos peitorais fortes são essenciais para movimentos de empurrar, como no futebol americano, natação, boxe e levantamento de peso.</h1>
+        </div>
+
+        <h1 class="exer">5 exercicios</h1>
+
+        <div class="form-box"><!--div filho-->
+            <h1 class="treinos"><a href="braço.html">Treino braço</a></h1>
+            <h1 class="a">6 exercicios</h1>
+        </div>
+    
+        <div class="form-box2"><!--div filho-->
+            <h1 class="treinos"><a href="costa.html">Treino costas</a></h1>
+            <h1 class="a">5 exercicios</h1>
+        </div>
+    
+        <div class="form-box3"><!--div filho-->
+            <h1 class="treinos"><a href="abdomen.html">Treino abdomen</a></h1>
+            <h1 class="a">6 exercicios</h1>
+        </div>
+    
+        <div class="form-box4"><!--div filho-->
+            <h1 class="treinos"><a href="perna.html">Treino perna</a></h1>
+            <h1 class="a">4 exercicios</h1>
+        </div>
+    
+        <div class="form-box5"><!--div filho-->
+            <h1 class="treinos"><a href="peito.html">Treino peito</a></h1>
+            <h1 class="a">5 exercicios</h1>
+        </div>
+    
+        <div class="form-box6"><!--div filho-->
+            <h1 class="treinos"><a href="ombro.html">Treino ombros</a></h1>
+            <h1 class="a">5 exercicios</h1>
+        </div>
+    </form>
+</body>
+</html>
